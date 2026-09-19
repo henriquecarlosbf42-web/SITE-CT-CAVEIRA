@@ -63,6 +63,59 @@
   }
   .hero .badge-lg{width:150px;height:150px;border-radius:50%;background:var(--white);margin:0 auto 28px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,0.5);}
   .hero .badge-lg img{width:100%;height:100%;object-fit:cover;}
+
+  .sensei-lineup{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    gap:-24px;
+    margin-bottom:8px;
+  }
+  .sensei-lineup .item{
+    position:relative;
+    width:190px;
+    margin:0 -16px;
+    text-align:center;
+  }
+  .sensei-lineup .item img{
+    width:100%;
+    height:260px;
+    object-fit:contain;
+    object-position:bottom;
+    filter:drop-shadow(0 20px 24px rgba(0,0,0,0.5));
+  }
+  .sensei-lineup .item .ph-figure{
+    width:100%;
+    height:260px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    color:var(--muted);
+    font-size:12px;
+    padding-bottom:20px;
+    border-bottom:1px dashed var(--line);
+  }
+  .sensei-lineup .item .nome{
+    margin-top:8px;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    color:var(--muted);
+  }
+  .sensei-lineup .item .nome span{color:var(--red);display:block;font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:0.03em;}
+  .sensei-fade{
+    position:relative;
+    margin-top:-40px;
+    height:60px;
+    background:linear-gradient(180deg, rgba(10,10,10,0) 0%, var(--base) 85%);
+    pointer-events:none;
+  }
+  @media (max-width:800px){
+    .sensei-lineup{flex-wrap:wrap;}
+    .sensei-lineup .item{width:42%;}
+    .sensei-lineup .item img, .sensei-lineup .item .ph-figure{height:180px;}
+  }
   .hero .tag{color:var(--red);font-size:14px;text-transform:uppercase;letter-spacing:0.2em;font-weight:600;margin-bottom:16px;}
   .hero h1{font-size:clamp(40px,7vw,88px);line-height:1;color:var(--white);}
   .hero .subtitle{margin:20px auto 0;font-size:clamp(16px,2.2vw,20px);color:var(--muted);max-width:560px;}
@@ -175,6 +228,25 @@
 
 <section class="hero">
   <div class="container">
+    <div class="sensei-lineup reveal">
+      <div class="item">
+        <img src="img/rodrigo-semfundo.png" alt="Rodrigo Zanella">
+        <div class="nome"><span>Rodrigo</span>Zanella</div>
+      </div>
+      <div class="item">
+        <div class="ph-figure">[ foto sem fundo ]</div>
+        <div class="nome"><span>Castrinho</span>Sergio Castro</div>
+      </div>
+      <div class="item">
+        <div class="ph-figure">[ foto sem fundo ]</div>
+        <div class="nome"><span>Giga</span>Vitor Toledo</div>
+      </div>
+      <div class="item">
+        <div class="ph-figure">[ foto sem fundo ]</div>
+        <div class="nome"><span>Evandro</span>Cardoso</div>
+      </div>
+    </div>
+    <div class="sensei-fade"></div>
     <div class="badge-lg reveal"><img src="identidade/logo-ct-caveira.jpg" alt="Logo CT Caveira"></div>
     <div class="tag reveal">Jiu-Jitsu · São José dos Campos</div>
     <h1 class="reveal">DISCIPLINA · RESPEITO<br>EVOLUÇÃO.</h1>
