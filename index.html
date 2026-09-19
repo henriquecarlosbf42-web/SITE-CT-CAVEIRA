@@ -61,11 +61,12 @@
     border-bottom:1px solid var(--line);
     text-align:center;
   }
-  .sensei-lineup-img{max-width:640px;margin:0 auto;}
+  .sensei-lineup-img{max-width:640px;margin:0 auto;aspect-ratio:2/1;overflow:hidden;}
   .sensei-lineup-img img{
     width:100%;
-    height:auto;
-    filter:drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+    height:100%;
+    object-fit:cover;
+    object-position:center bottom;
   }
   .sensei-fade{
     position:relative;
