@@ -34,6 +34,14 @@ Divulgar a estrutura da academia e atrair mais alunos. Complementa a landing pag
 
 Fotos dos dois ainda pendentes (aguardando envio do usuário, salvar em `img/`).
 
+## Unidades (3)
+
+1. **São José dos Campos** (Jardim Oriente) — dados completos acima. WhatsApp (12) 98800-9931.
+2. **Residencial Righi** — Instagram @ctcaveira.res.righi (719 seguidores). Professor: Francis Silva (@francissilvabjj). WhatsApp (12) 99194-8589. **Endereço ainda não confirmado.**
+3. **Jacareí** — ainda sem dados (Instagram, endereço, WhatsApp, professor). Pendente.
+
+Fotos de cada unidade também pendentes — salvar em `img/` quando o usuário mandar.
+
 ## Identidade visual
 
 Puxar direto do Instagram (não reusar a paleta do Rodrigo) — aguardando prints/fotos do perfil pra extrair cores, logo e estilo reais.

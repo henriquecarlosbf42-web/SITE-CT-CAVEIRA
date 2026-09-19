@@ -109,6 +109,20 @@
   .pratico-card .endereco{color:var(--ink);font-size:15px;margin-bottom:8px;}
   .pratico-card .map-link{display:inline-block;margin-top:12px;font-size:13px;color:var(--red);text-decoration:underline;}
 
+  /* UNIDADES */
+  .unidade-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:24px;}
+  .unidade-card{background:var(--surface2);border:1px solid var(--line);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;}
+  .unidade-foto{aspect-ratio:4/3;background:linear-gradient(135deg, #1c1c1c, #141414);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;}
+  .unidade-foto img{width:100%;height:100%;object-fit:cover;}
+  .unidade-body{padding:24px;display:flex;flex-direction:column;flex:1;}
+  .unidade-body h3{font-size:18px;color:var(--white);font-family:'Inter',sans-serif;font-weight:600;margin-bottom:10px;}
+  .unidade-body .endereco{color:var(--muted);font-size:14px;}
+  .unidade-body .endereco.pendente{color:var(--muted);font-style:italic;}
+  .unidade-body .map-link{display:inline-block;margin-top:8px;font-size:13px;color:var(--red);text-decoration:underline;}
+  .unidade-horarios{margin:14px 0;}
+  .unidade-horarios .linha{display:flex;justify-content:space-between;padding:8px 0;border-top:1px solid var(--line);font-size:13px;}
+  .unidade-body .btn{margin-top:auto;align-self:flex-start;}
+
   /* PROFESSOR */
   #professor{border-bottom:1px solid var(--line);}
   .professor-grid{display:flex;flex-direction:column;gap:24px;}
@@ -152,7 +166,7 @@
     <div class="links">
       <a href="#sobre">Sobre</a>
       <a href="#modalidades">Modalidades</a>
-      <a href="#pratico">Horários</a>
+      <a href="#pratico">Unidades</a>
       <a href="#professor">Professor</a>
       <a href="#contato">Contato</a>
     </div>
@@ -214,20 +228,45 @@
 
 <section id="pratico">
   <div class="container">
-    <div class="section-label reveal">Informações práticas</div>
-    <h2 class="section-title reveal">Horários e localização</h2>
-    <div class="pratico-grid">
-      <div class="pratico-card reveal">
-        <h3>Horários de treino</h3>
-        <div class="linha"><span class="k">Terça-feira</span><span class="v">9h–17h e 19h30</span></div>
-        <div class="linha"><span class="k">Quinta-feira</span><span class="v">9h–17h e 19h30</span></div>
-        <div class="linha"><span class="k">Sábado</span><span class="v">9h</span></div>
+    <div class="section-label reveal">Unidades</div>
+    <h2 class="section-title reveal">Onde treinar</h2>
+    <p class="section-intro reveal">A CT Caveira tem três unidades — cada uma com WhatsApp próprio pra agendar sua aula experimental direto com quem ensina lá.</p>
+    <div class="unidade-grid">
+
+      <div class="unidade-card reveal">
+        <div class="unidade-foto ph">[ foto da unidade ]</div>
+        <div class="unidade-body">
+          <h3>CT Caveira — São José dos Campos</h3>
+          <p class="endereco">Praça Mikado, 74 — Jardim Oriente<br>São José dos Campos, SP</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a+Mikado%2C+74+Jardim+Oriente+S%C3%A3o+Jos%C3%A9+dos+Campos" target="_blank" rel="noopener" class="map-link">Ver no mapa →</a>
+          <div class="unidade-horarios">
+            <div class="linha"><span class="k">Terça e quinta</span><span class="v">9h–17h e 19h30</span></div>
+            <div class="linha"><span class="k">Sábado</span><span class="v">9h</span></div>
+          </div>
+          <a href="https://wa.me/5512988009931?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental%20na%20unidade%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos." target="_blank" rel="noopener" class="btn btn-primary">Falar no WhatsApp</a>
+        </div>
       </div>
-      <div class="pratico-card reveal">
-        <h3>Endereço</h3>
-        <p class="endereco">Praça Mikado, 74 — Jardim Oriente<br>São José dos Campos, SP</p>
-        <a href="https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a+Mikado%2C+74+Jardim+Oriente+S%C3%A3o+Jos%C3%A9+dos+Campos" target="_blank" rel="noopener" class="map-link">Ver no mapa →</a>
+
+      <div class="unidade-card reveal">
+        <div class="unidade-foto ph">[ foto da unidade ]</div>
+        <div class="unidade-body">
+          <h3>CT Caveira — Residencial Righi</h3>
+          <p class="endereco pendente">[ endereço a confirmar ]</p>
+          <p style="color:var(--muted);font-size:13px;margin-top:8px;">Professor: Francis Silva</p>
+          <a href="https://wa.me/5512991948589?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental%20na%20unidade%20Residencial%20Righi." target="_blank" rel="noopener" class="btn btn-primary">Falar no WhatsApp</a>
+        </div>
       </div>
+
+      <div class="unidade-card reveal">
+        <div class="unidade-foto ph">[ foto da unidade ]</div>
+        <div class="unidade-body">
+          <h3>CT Caveira — Jacareí</h3>
+          <p class="endereco pendente">[ endereço a confirmar ]</p>
+          <p style="color:var(--muted);font-size:13px;margin-top:8px;">[ WhatsApp a confirmar ]</p>
+          <a href="#contato" class="btn btn-ghost">Falar pelo contato geral</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
