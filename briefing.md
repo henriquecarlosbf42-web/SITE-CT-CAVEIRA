@@ -30,9 +30,14 @@ Divulgar a estrutura da academia e atrair mais alunos. Complementa a landing pag
 
 - **Rodrigo Zanella** — faixa preta, campeão mundial SJJIF (Japão). Projeto próprio: `Sensei Zanella JJ`.
 - **Sergio Castro ("Sensei Castrinho")** — Instagram @castrinhosergiocastro (3.090 seguidores). Sem faixa/conquista pública detalhada no perfil.
-- **Vitor Toledo ("Sensei Giga")** — Instagram @vitortoledobjj (5.316 seguidores). 2x Campeão Mundial CBJJE, prata WorldPro, prata PanAm IBJJF, bronze Mundial IBJJF.
+- **Vitor Toledo ("Sensei Giga")** — Instagram @vitortoledobjj (5.316 seguidores). 2x Campeão Mundial CBJJE, prata WorldPro, prata PanAm IBJJF, bronze Mundial IBJJF. Foto aplicada (`img/giga.jpg`, baixa resolução — foto de perfil do Instagram, 150x150).
+- **Evandro Cardoso ("Sensei Evandro")** — Instagram @evandro_fcardoso (1.328 seguidores), unidade São José dos Campos. Sem faixa/conquista pública detalhada.
 
-Fotos dos dois ainda pendentes (aguardando envio do usuário, salvar em `img/`).
+Fotos de Castrinho e Evandro ainda pendentes (aguardando envio do usuário — precisa ser a imagem de verdade salva, não um atalho/link de post).
+
+## Nota — domínio ctcaveira.com.br
+
+Existe um domínio `ctcaveira.com.br` mencionado no Instagram do Evandro, mas o conteúdo dele é claramente falso/template (endereço fictício em São Paulo, WhatsApp e email placeholder, nomes de professores que não conferem com nenhum confirmado). Não usar como fonte de dados.
 
 ## Unidades (3)
 
