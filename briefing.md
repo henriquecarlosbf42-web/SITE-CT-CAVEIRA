@@ -26,6 +26,14 @@ Divulgar a estrutura da academia e atrair mais alunos. Complementa a landing pag
 - **WhatsApp:** (12) 98800-9931 (telefones adicionais: (12) 98825-3043 / (12) 99773-3312)
 - **Modalidades:** Jiu-Jitsu infantil e adulto — treino, técnica e preparação pra competição
 
+## Corpo docente
+
+- **Rodrigo Zanella** — faixa preta, campeão mundial SJJIF (Japão). Projeto próprio: `Sensei Zanella JJ`.
+- **Sergio Castro ("Sensei Castrinho")** — Instagram @castrinhosergiocastro (3.090 seguidores). Sem faixa/conquista pública detalhada no perfil.
+- **Vitor Toledo ("Sensei Giga")** — Instagram @vitortoledobjj (5.316 seguidores). 2x Campeão Mundial CBJJE, prata WorldPro, prata PanAm IBJJF, bronze Mundial IBJJF.
+
+Fotos dos dois ainda pendentes (aguardando envio do usuário, salvar em `img/`).
+
 ## Identidade visual
 
 Puxar direto do Instagram (não reusar a paleta do Rodrigo) — aguardando prints/fotos do perfil pra extrair cores, logo e estilo reais.

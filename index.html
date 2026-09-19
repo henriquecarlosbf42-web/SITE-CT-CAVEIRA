@@ -111,14 +111,19 @@
 
   /* PROFESSOR */
   #professor{border-bottom:1px solid var(--line);}
+  .professor-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:24px;}
   .professor-card{
-    display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;
-    background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:32px;
+    display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;
+    background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:28px;
   }
-  .professor-card .avatar{width:110px;height:110px;border-radius:50%;overflow:hidden;border:2px solid var(--red);}
+  .professor-card.featured{grid-column:1 / -1;}
+  .professor-card .avatar{width:100px;height:100px;border-radius:50%;overflow:hidden;border:2px solid var(--red);background:var(--surface2);flex-shrink:0;}
   .professor-card .avatar img{width:100%;height:100%;object-fit:cover;}
-  .professor-card h3{font-size:24px;color:var(--white);}
-  .professor-card p{color:var(--muted);font-size:14px;margin:8px 0 16px;}
+  .professor-card .avatar.ph{display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;text-align:center;}
+  .professor-card h3{font-size:22px;color:var(--white);}
+  .professor-card .role{color:var(--red);font-size:12px;text-transform:uppercase;letter-spacing:0.08em;font-weight:600;margin-top:2px;}
+  .professor-card p{color:var(--muted);font-size:14px;margin:10px 0 14px;}
+  .professor-card .btn{padding:10px 20px;font-size:14px;}
 
   /* CTA FINAL */
   .cta-final{
@@ -130,7 +135,7 @@
   footer{padding:32px 0;text-align:center;color:var(--muted);font-size:13px;}
 
   @media (max-width:800px){
-    .sobre-grid, .pratico-grid, .professor-card{grid-template-columns:1fr;gap:28px;}
+    .sobre-grid, .pratico-grid, .professor-grid, .professor-card{grid-template-columns:1fr;gap:28px;}
     .professor-card{text-align:center;justify-items:center;}
     nav .links{display:none;}
     .sobre-grid > div:first-child{text-align:center;}
@@ -233,12 +238,33 @@
   <div class="container">
     <div class="section-label reveal">Corpo docente</div>
     <h2 class="section-title reveal">Quem ensina</h2>
-    <div class="professor-card reveal">
-      <div class="avatar"><img src="img/rodrigo-professor.png" alt="Rodrigo Zanella"></div>
-      <div>
-        <h3>Rodrigo Zanella</h3>
-        <p>Faixa preta, professor na CT Caveira, campeão mundial de Jiu-Jitsu pela SJJIF (Japão). Une formação técnica em Educação Física com experiência real de competição.</p>
-        <a href="https://site-zanella-three.vercel.app" target="_blank" rel="noopener" class="btn btn-ghost">Conhecer o projeto do Rodrigo</a>
+    <div class="professor-grid">
+      <div class="professor-card featured reveal">
+        <div class="avatar"><img src="img/rodrigo-professor.png" alt="Rodrigo Zanella"></div>
+        <div>
+          <h3>Rodrigo Zanella</h3>
+          <div class="role">Faixa Preta · Campeão Mundial SJJIF</div>
+          <p>Professor na CT Caveira, campeão mundial de Jiu-Jitsu pela SJJIF (Japão). Une formação técnica em Educação Física com experiência real de competição.</p>
+          <a href="https://site-zanella-three.vercel.app" target="_blank" rel="noopener" class="btn btn-ghost">Conhecer o projeto do Rodrigo</a>
+        </div>
+      </div>
+      <div class="professor-card reveal">
+        <div class="avatar ph">[ foto ]</div>
+        <div>
+          <h3>Sergio Castro</h3>
+          <div class="role">Sensei Castrinho</div>
+          <p>Professor na CT Caveira, presente na formação e progressão de faixa dos alunos da academia.</p>
+          <a href="https://instagram.com/castrinhosergiocastro" target="_blank" rel="noopener" class="btn btn-ghost">Seguir no Instagram</a>
+        </div>
+      </div>
+      <div class="professor-card reveal">
+        <div class="avatar ph">[ foto ]</div>
+        <div>
+          <h3>Vitor Toledo</h3>
+          <div class="role">Sensei Giga</div>
+          <p>2x Campeão Mundial CBJJE, prata no WorldPro e no PanAm IBJJF, bronze no Mundial IBJJF — competidor ativo e professor na CT Caveira.</p>
+          <a href="https://instagram.com/vitortoledobjj" target="_blank" rel="noopener" class="btn btn-ghost">Seguir no Instagram</a>
+        </div>
       </div>
     </div>
   </div>
